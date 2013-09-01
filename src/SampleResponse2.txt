@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='false'
+    error='false'
+    numpods='0'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='1.007'
+    parsetiming='0.18'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa11911bfi0365d548ci1b000058f3884259iai081'
+    host='http://www4c.wolframalpha.com'
+    server='35'
+    related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa11921bfi0365d548ci1b00005g7bfgc3d93dfdb1&amp;s=35'
+    version='2.6'>
+ <tips count='2'>
+  <tip text='Avoid concatenation in math expressions' />
+  <tip text='Use r*x rather than rx, and q*x^2 rather than qx2' />
+ </tips>
+</queryresult>
