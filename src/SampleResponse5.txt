@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='4'
+    datatypes=''
+    timedout='Integral,Series,Plot,Plotter,Simplification,Sequence,Sum'
+    timedoutpods=''
+    timing='1.546'
+    parsetiming='0.489'
+    parsetimedout='false'
+    recalculate='http://www5a.wolframalpha.com/api/v2/recalc.jsp?id=MSPa21981h86h63f51g080d0000034bgia035791ieig&amp;s=61'
+    id='MSPa21991h86h63f51g080d000005chc3gcb3880c550'
+    host='http://www5a.wolframalpha.com'
+    server='61'
+    related='http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa22001h86h63f51g080d00000220b751f3iia05a7&amp;s=61'
+    version='2.6'>
+ <pod title='Indefinite integral'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''
+      primary='true'>
+   <plaintext> integral e^(-t^2)  dt = 1/2 sqrt(pi) erf(t)+constant</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22011h86h63f51g080d00000482egdhd9261g822?MSPStoreType=image/gif&amp;s=61'
+       alt=' integral e^(-t^2)  dt = 1/2 sqrt(pi) erf(t)+constant'
+       title=' integral e^(-t^2)  dt = 1/2 sqrt(pi) erf(t)+constant'
+       width='238'
+       height='36' />
+  </subpod>
+  <infos count='1'>
+   <info text='erf(x) is the error function'>
+    <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22021h86h63f51g080d000002517fa32i9hd4951?MSPStoreType=image/gif&amp;s=61'
+        alt='erf(x) is the error function'
+        title='erf(x) is the error function'
+        width='169'
+        height='16' />
+    <link url='http://reference.wolfram.com/mathematica/ref/Erf.html'
+        text='Documentation'
+        title='Mathematica' />
+    <link url='http://functions.wolfram.com/GammaBetaErf/Erf'
+        text='Properties'
+        title='Wolfram Functions Site' />
+    <link url='http://mathworld.wolfram.com/Erf.html'
+        text='Definition'
+        title='MathWorld' />
+   </info>
+  </infos>
+ </pod>
+ <pod title='Plots of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='2'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22031h86h63f51g080d00000564hf1hch3c0d2ef?MSPStoreType=image/gif&amp;s=61'
+       alt=''
+       title=''
+       width='296'
+       height='124' />
+  </subpod>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22041h86h63f51g080d000002a71acd136a2653i?MSPStoreType=image/gif&amp;s=61'
+       alt=''
+       title=''
+       width='310'
+       height='126' />
+  </subpod>
+ </pod>
+ <pod title='Series expansion of the integral at t=0'
+     scanner='Series'
+     id='SeriesExpansionOfTheIntegralAt `1`x=0.'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>t-t^3/3+t^5/10+O(t^6)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22051h86h63f51g080d000000chie5228fhe1hg1?MSPStoreType=image/gif&amp;s=61'
+       alt='t-t^3/3+t^5/10+O(t^6)'
+       title='t-t^3/3+t^5/10+O(t^6)'
+       width='125'
+       height='39' />
+  </subpod>
+ </pod>
+ <pod title='Definite integral'
+     scanner='Integral'
+     id='DefiniteIntegral'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext> integral_0^infinity e^(-t^2)  dt~~0.886226925452759...</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22061h86h63f51g080d000005b0i42935bai0df2?MSPStoreType=image/gif&amp;s=61'
+       alt=' integral_0^infinity e^(-t^2)  dt~~0.886226925452759...'
+       title=' integral_0^infinity e^(-t^2)  dt~~0.886226925452759...'
+       width='238'
+       height='35' />
+  </subpod>
+  <states count='1'>
+   <state name='More digits'
+       input='DefiniteIntegral__More digits' />
+  </states>
+ </pod>
+</queryresult>

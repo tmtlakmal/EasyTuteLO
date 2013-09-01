@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='8'
+    datatypes='D'
+    timedout='GlobalExtrema,InterestingDefiniteIntegrals,InterestingMultiDimensionalDefiniteIntegrals'
+    timedoutpods=''
+    timing='2.173'
+    parsetiming='0.326'
+    parsetimedout='false'
+    recalculate='http://www5a.wolframalpha.com/api/v2/recalc.jsp?id=MSPa22361b70ddbfid5dg80e0000598ag3g26ded5386&amp;s=51'
+    id='MSPa22371b70ddbfid5dg80e0000182fh0e9a1cd1i17'
+    host='http://www5a.wolframalpha.com'
+    server='51'
+    related='http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa22381b70ddbfid5dg80e00000di9ff00326fc6ia&amp;s=51'
+    version='2.6'>
+ <pod title='Derivative'
+     scanner='Derivative'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>(d)/(dx)(e^(a x)) = a e^(a x)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22391b70ddbfid5dg80e00004cf6gfh9062eg82b?MSPStoreType=image/gif&amp;s=51'
+       alt='(d)/(dx)(e^(a x)) = a e^(a x)'
+       title='(d)/(dx)(e^(a x)) = a e^(a x)'
+       width='111'
+       height='36' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='Input__Approximate form' />
+   <state name='Step-by-step solution'
+       input='Input__Step-by-step solution' />
+  </states>
+ </pod>
+ <pod title='3D plot'
+     scanner='Plot'
+     id='3DPlot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22401b70ddbfid5dg80e00003h6e66efe8a52e0d?MSPStoreType=image/gif&amp;s=51'
+       alt=''
+       title=''
+       width='240'
+       height='198' />
+  </subpod>
+  <states count='1'>
+   <state name='Show contour lines'
+       input='3DPlot__Show contour lines' />
+  </states>
+ </pod>
+ <pod title='Contour plot'
+     scanner='Plot'
+     id='ContourPlot'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22411b70ddbfid5dg80e00002dege1a462g206ia?MSPStoreType=image/gif&amp;s=51'
+       alt=''
+       title=''
+       width='240'
+       height='246' />
+  </subpod>
+ </pod>
+ <pod title='Root'
+     scanner='Reduce'
+     id='Root'
+     position='400'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <plaintext>a = 0</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22421b70ddbfid5dg80e000049i7248344h93d01?MSPStoreType=image/gif&amp;s=51'
+       alt='a = 0'
+       title='a = 0'
+       width='500'
+       height='22' />
+  </subpod>
+ </pod>
+ <pod title='Property as a real function'
+     scanner='FunctionProperties'
+     id='PropertyAsARealFunction'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title='Domain'>
+   <plaintext>R  (all real numbers)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22431b70ddbfid5dg80e00004ia67ae9488ei2ff?MSPStoreType=image/gif&amp;s=51'
+       alt='R  (all real numbers)'
+       title='R  (all real numbers)'
+       width='138'
+       height='18' />
+  </subpod>
+ </pod>
+ <pod title='Periodicity'
+     scanner='FunctionProperties'
+     id='Periodicity'
+     position='600'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>periodic in x with period (2 i pi)/a</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22441b70ddbfid5dg80e0000357g87290fd0a1a7?MSPStoreType=image/gif&amp;s=51'
+       alt='periodic in x with period (2 i pi)/a'
+       title='periodic in x with period (2 i pi)/a'
+       width='191'
+       height='24' />
+  </subpod>
+  <states count='1'>
+   <state name='Approximate form'
+       input='Periodicity__Approximate form' />
+  </states>
+ </pod>
+ <pod title='Series expansion at x=0'
+     scanner='Series'
+     id='SeriesExpansionAt `1`x=0.'
+     position='700'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>a+a^2 x+(a^3 x^2)/2+(a^4 x^3)/6+(a^5 x^4)/24+O(x^5)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22451b70ddbfid5dg80e00005a0e6a03b0475i44?MSPStoreType=image/gif&amp;s=51'
+       alt='a+a^2 x+(a^3 x^2)/2+(a^4 x^3)/6+(a^5 x^4)/24+O(x^5)'
+       title='a+a^2 x+(a^3 x^2)/2+(a^4 x^3)/6+(a^5 x^4)/24+O(x^5)'
+       width='263'
+       height='40' />
+  </subpod>
+ </pod>
+ <pod title='Indefinite integral'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='800'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral a e^(a x) dx = e^(a x)+constant</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP22461b70ddbfid5dg80e00005de1dd91i00ha3i5?MSPStoreType=image/gif&amp;s=51'
+       alt=' integral a e^(a x) dx = e^(a x)+constant'
+       title=' integral a e^(a x) dx = e^(a x)+constant'
+       width='190'
+       height='34' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='IndefiniteIntegral__Approximate form' />
+   <state name='Step-by-step solution'
+       input='IndefiniteIntegral__Step-by-step solution' />
+  </states>
+ </pod>
+</queryresult>

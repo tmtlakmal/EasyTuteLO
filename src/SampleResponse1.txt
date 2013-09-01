@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='5'
+    datatypes=''
+    timedout=''
+    timedoutpods='Sample solution family,Possible Lagrangian'
+    timing='8.817'
+    parsetiming='0.177'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa19801f2462618ag8eei300003df504f06718e9da'
+    host='http://www5a.wolframalpha.com'
+    server='33'
+    related='http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa19811f2462618ag8eei30000195hi668cdd7ah86&amp;s=33'
+    version='2.6'>
+ <pod title='Input'
+     scanner='Identity'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>y&apos;&apos;(x)+y(x) = 0</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP19821f2462618ag8eei3000022e46e907f7hb7d1?MSPStoreType=image/gif&amp;s=33'
+       alt='y&apos;&apos;(x)+y(x) = 0'
+       title='y&apos;&apos;(x)+y(x) = 0'
+       width='109'
+       height='18' />
+  </subpod>
+ </pod>
+ <pod title='ODE classification'
+     scanner='ODE'
+     id='ODEClassification'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>second-order linear ordinary differential equation</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP19831f2462618ag8eei3000063c815ba5g59i21e?MSPStoreType=image/gif&amp;s=33'
+       alt='second-order linear ordinary differential equation'
+       title='second-order linear ordinary differential equation'
+       width='327'
+       height='18' />
+  </subpod>
+ </pod>
+ <pod title='Alternate form'
+     scanner='Simplification'
+     id='AlternateForm'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>y&apos;&apos;(x) = -y(x)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP19841f2462618ag8eei3000054gd4c4cbe88gbc5?MSPStoreType=image/gif&amp;s=33'
+       alt='y&apos;&apos;(x) = -y(x)'
+       title='y&apos;&apos;(x) = -y(x)'
+       width='96'
+       height='18' />
+  </subpod>
+ </pod>
+ <pod title='Differential equation solution'
+     scanner='ODE'
+     id='DifferentialEquationSolution'
+     position='400'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <plaintext>y(x) = c_2 sin(x)+c_1 cos(x)</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP19851f2462618ag8eei300001ee284f3bd0f9625?MSPStoreType=image/gif&amp;s=33'
+       alt='y(x) = c_2 sin(x)+c_1 cos(x)'
+       title='y(x) = c_2 sin(x)+c_1 cos(x)'
+       width='171'
+       height='18' />
+  </subpod>
+  <states count='1'>
+   <state name='Step-by-step solution'
+       input='DifferentialEquationSolution__Step-by-step solution' />
+  </states>
+ </pod>
+ <pod title='Plots of sample individual solutions'
+     scanner='ODE'
+     id='PlotsOfSampleIndividualSolutions'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext> |   |  |   | y(0) = 1
+y&apos;(0) = 0
+ |   |  |   | y(0) = 0
+y&apos;(0) = 1</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP19861f2462618ag8eei30000457ahabf08a3fg42?MSPStoreType=image/gif&amp;s=33'
+       alt=' |   |  |   | y(0) = 1
+y&apos;(0) = 0
+ |   |  |   | y(0) = 0
+y&apos;(0) = 1'
+       title=' |   |  |   | y(0) = 1
+y&apos;(0) = 0
+ |   |  |   | y(0) = 0
+y&apos;(0) = 1'
+       width='389'
+       height='224' />
+  </subpod>
+ </pod>
+</queryresult>
