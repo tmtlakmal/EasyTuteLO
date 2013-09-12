@@ -13,6 +13,7 @@ class WolframMathResultReader:
         self.images = []
         self.plainTexts=[]
         self.parsedResult=[]
+        self.imageFileNames=[]
         self.name = self.fileName[0:len(self.fileName)-4]
                  
     def getSuccess(self):                   # if the content in the file is valid success
@@ -56,12 +57,14 @@ class WolframMathResultReader:
         count=0
         try:
             for imgUrl in self.images:
-                f = open(self.name+'image'+`count`+'.gif','wb')
+                imageFileName=self.name+'image'+`count`+'.gif'
+                self.imageFileNames.append(imageFileName)
+                f = open(imageFileName,'wb')
                 f.write(urllib.urlopen(imgUrl).read())
                 f.close()
                 count+=1
         except Exception:
-            self.retrieveImages()
+            print("Exception occured")
     
     def getTotalResult(self):               #getTotalResult from wolfram including images
         self.setVariables(self.readFile())

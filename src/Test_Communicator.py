@@ -21,10 +21,37 @@ class Test_APICommunicator(unittest.TestCase):
         self.assertEquals(a.isFileConfigured(),False)
         os.rename("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configurationBack.txt","/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configuration.txt")
 
+    def testConfigurationSet(self):             #test case to check configuration
+        a=com.APICommunicator()  
+        a.setConfiguration()
+        self.assertEquals(a.getAppID(),"4WKYHL-AWUQL4GWA3")
+        self.assertEquals(a.getHost(),"http://api.wolframalpha.com/v2/query?")
 
-
-
-
+    def testCheckConfiguartion(self):           #test case to check configuration 
+        a=com.APICommunicator() 
+        try: 
+            a.setConfiguration()
+            self.assertEquals(a.isConfigured(), True)
+        except Exception:
+            self.assertEquals(a.isConfigured(), False)
+        a=com.APICommunicator("configuration1.txt") 
+        try: 
+            a.setConfiguration()
+            self.assertEquals(a.isConfigured(), False)
+        except Exception:
+            self.assertEquals(a.isConfigured(), False)
+            
+    def testGetResult(self):
+        a=com.APICommunicator() 
+        try:
+            a.setConfiguration()
+            s="int x*cosx dx"
+            a.getResult(s)
+            self.assertEquals(os.path.exists("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/"+s+".txt"),True)
+            os.remove("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/"+s+".txt")
+        except Exception:
+            self.assertEquals(os.path.exists("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/"+s+".txt"),False)
+            print("connection or configuration problem")
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
