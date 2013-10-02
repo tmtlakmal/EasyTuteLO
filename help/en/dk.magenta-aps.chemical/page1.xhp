@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+<meta>
+<topic id="About_Magenta_Chemical" indexer="include" status="PUBLISH">
+<title Hd="title">About Magenta Chemical</title>
+<filename>/dk.magenta-aps.chemical/page1.xhp</filename>
+</topic>
+</meta>
+<body>
+
+<bookmark xml-lang="en-US" branch="index" id="bm1">
+<bookmark_value>Chemical formula</bookmark_value>
+<bookmark_value>Insert chemical formula</bookmark_value>
+<bookmark_value>Formula</bookmark_value>
+<bookmark_value>Formula; chemical</bookmark_value>
+</bookmark>
+<paragraph role="heading" level="1">About Magenta Chemical</paragraph>
+<paragraph role="heading" level="2">A short description</paragraph>
+
+
+<paragraph role="paragraph">You can insert chemical formulas by activating the icon. Any selected text will be inserted in the dialog and the selected text will be <emph>replaced</emph> by the image.
+</paragraph>
+
+<paragraph role="paragraph"><image id="trans-dichloroethene" src="dk.magenta-aps.chemical/trans-dichloroethene.gif" width="3.916cm" height="2.928cm"><alt id="alt_idext">trans-dichloroethene</alt></image></paragraph>
+
+<paragraph role="heading" level="2">Parameters</paragraph>
+<paragraph role="paragraph">
+<table>
+<tablerow>	<tablecell><paragraph role="paragraph">Formula</paragraph></tablecell><tablecell><paragraph role="paragraph">Insert the formula here. Any selected text will be inserted in the dialog and the selected text will be <emph>replaced</emph> by the image.</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Format</paragraph></tablecell><tablecell><paragraph role="paragraph">Select between <emph>GIF</emph> and <emph>PNG</emph>. GIF is the default.</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Width and height</paragraph></tablecell><tablecell><paragraph role="paragraph">Image size en pixels.</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Line width</paragraph></tablecell><tablecell><paragraph role="paragraph">Line width in pixels.</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Symbol font size</paragraph></tablecell><tablecell><paragraph role="paragraph">Font size</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Show all symbols</paragraph></tablecell><tablecell><paragraph role="paragraph">Should all carbon and hydrogene atoms be shown?</paragraph></tablecell></tablerow>
+<tablerow>	<tablecell><paragraph role="paragraph">Show stereo</paragraph></tablecell><tablecell><paragraph role="paragraph">Indicate if 3D indicator is shown.</paragraph></tablecell></tablerow>
+
+
+
+</table>
+</paragraph>
+
+
+<paragraph role="heading" level="2">Supported formats</paragraph>
+<paragraph role="paragraph">
+<table>
+
+<tablerow>
+	<tablecell><paragraph role="paragraph">SMILES</paragraph></tablecell><tablecell><paragraph role="paragraph">O1C(/C=C/[C@@](/C=C/[C@@H](C(=C\CC[C@H]([C@@H]1C)C)/C)OC)(O)C)=O</paragraph></tablecell><tablecell><paragraph role="paragraph"><link href="http://en.wikipedia.org/wiki/SMILES" name="en.wikipedia.org/wiki/SMILES">en.wikipedia.org/wiki/SMILES</link></paragraph></tablecell>
+</tablerow>
+
+<tablerow>
+	<tablecell><paragraph role="paragraph">InChIKeys</paragraph></tablecell><tablecell><paragraph role="paragraph">BSYNRYMUTXBXSQ-UHFFFAOYSA-N</paragraph></tablecell><tablecell><paragraph role="paragraph"><link href="http://en.wikipedia.org/wiki/International_Chemical_Identifier" name="en.wikipedia.org/wiki/International_Chemical_Identifier">en.wikipedia.org/wiki/International_Chemical_Identifier</link></paragraph></tablecell>
+</tablerow>
+<tablerow>
+	<tablecell><paragraph role="paragraph">Name</paragraph></tablecell><tablecell><paragraph role="paragraph">morphine</paragraph></tablecell><tablecell><paragraph role="paragraph"></paragraph></tablecell>
+</tablerow>
+
+</table>
+</paragraph>
+
+
+                             
+</body>
+</helpdocument>

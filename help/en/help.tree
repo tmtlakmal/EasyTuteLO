@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<tree_view>
+<help_section application="Chemical" id="Magenta" title="Magenta">
+	<node id="About_Magenta_Chemical" title="Magenta Chemical">
+		<topic id="en/dk.magenta-aps.chemical/page1.xhp">About Magenta Chemical</topic>
+	</node>
+</help_section>
+</tree_view>

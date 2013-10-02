@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Chemestry" script:language="StarBasic">REM  *****  BASIC  *****
+
+GLOBAL ProgressBar
+GLOBAL oDlg
+GLOBAL oSelected as String
+ 
+Sub Main
+  ProgressBar = ThisComponent.CurrentController.StatusIndicator
+ oSelected = GetSelection()
+ StartDialog
+ ProgressBar.end()
+End Sub
+
+Sub StartDialog
+DialogLibraries.LoadLibrary(&quot;Chemestry&quot;)
+  oDlg = CreateUnoDialog(DialogLibraries.Chemestry.Chemestry)
+  oDlgModel = oDlg.Model
+  oChemestryFormula = oDlg.GetControl(&quot;ChemestryFormula&quot;)
+  oChemestryFormula.Text = oSelected
+  
+  
+  if len(oSelected) &gt; 0 then
+  oWarning = oDlg.GetControl(&quot;Warning&quot;)
+  oWarning.Text = &quot;The selected text will be replaced!&quot;
+  end if  
+  oDlg.Title = &quot;Chemestry&quot;
+  oDlg.execute() 
+End Sub 
+
+
+Sub CloseDialog
+  oDlg.endExecute()
+  FileFormat=&quot;GIF&quot;
+  		ChemestryFormula = oDlg.getControl(&quot;ChemestryFormula&quot;).text
+  		FileFormat = oDlg.getControl(&quot;FileFormat&quot;).text
+  		Width = CStr(oDlg.getControl(&quot;Width&quot;).text)
+  		Height = CStr(oDlg.getControl(&quot;Height&quot;).text)
+  		LineWidth = CStr(oDlg.getControl(&quot;LineWidth&quot;).text)
+  		SymbolFontSize = CStr(oDlg.getControl(&quot;SymbolFontSize&quot;).text)
+  		Hsymbols = oDlg.getControl(&quot;H-symbols&quot;).getState
+  		Csymbols = oDlg.getControl(&quot;C-symbols&quot;).getState
+  		ShowStereo = oDlg.getControl(&quot;showstereo&quot;).getState	
+  			if len(ChemestryFormula) &lt; 1 then
+ 			ErrorHandling(&quot;Type some data.&quot;)
+ 		&apos;	exit sub 
+  			elseif len(ChemestryFormula) &gt; 1950 then
+  			ErrorHandling(&quot;Too much data.&quot;)
+  		&apos;	exit sub
+  			End if
+  			
+  		 
+  			&apos;print ChemestryFormula, FileFormat, Width, Height , LineWidth , SymbolFontSize
+  			StatusText(&quot;Generating image....&quot;)
+  InsertImage(ChemestryFormula, FileFormat, Width, Height, LineWidth, SymbolFontSize, Hsymbols, Csymbols, ShowStereo)
+
+End Sub
+
+Sub CancelDialog
+  oDlg.endExecute()
+  		ErrorHandling(&quot;Chemestry aborted!&quot;)
+
+End Sub
+
+Function GetSelection()
+oVC = thisComponent.getCurrentController.getViewCursor
+
+on error goto Errors
+oTC = oVC.getText.createTextCursorByRange(oVC)
+
+
+	
+
+	GetSelection = oTC.string
+exit function
+Errors:
+ErrorHandling(&quot;Only text can be selected&quot;)
+end function
+
+Sub InsertImage(ChemestryFormula, FileFormat, Width, Height, LineWidth, SymbolFontSize, Hsymbols, Csymbols, ShowStereo)
+  &apos;print Size &amp; DataContent &amp; Encode
+  
+  If FileFormat = &quot;GIF&quot; then
+  FileFormat =&quot;&quot;
+  else FileFormat = &quot;/format=&quot; &amp; FileFormat
+  End if 
+  
+  If Hsymbols = 1 then
+  Hsymbols = &quot;&amp;hsymbol=all&quot;
+  else Hsymbols = &quot;&quot;
+  End if
+  
+  If Csymbols= 1 then
+  Csymbols = &quot;&amp;csymbol=all&quot;
+  else Csymbols = &quot;&quot;
+  End if
+  
+  If ShowStereo= 1 then
+  ShowStereo = &quot;&amp;showstereo=1&quot;
+  else ShowStereo = &quot;&quot;
+  End if
+  
+ImgUrl = ConvertToURL(&quot;http://cactus.nci.nih.gov/chemical/structure/&quot; &amp; ChemestryFormula &amp; &quot;/image?&quot; &amp; FileFormat &amp; &quot;&amp;width=&quot; &amp; Width &amp; &quot;&amp;height=&quot; &amp; Height &amp; &quot;&amp;linewidth=&quot; &amp; LineWidth &amp; &quot;&amp;symbolfontsize=&quot; &amp; SymbolFontSize &amp; Hsymbols &amp; Csymbols &amp; ShowStereo)
+&apos;print &quot;---&quot; &amp; ImgUrl &amp; &quot;---&quot;
+&apos;ImgUrl =&quot;http://chart.apis.google.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8&quot;
+
+rem ----------------------------------------------------------------------
+rem define variables
+dim document   as object
+dim dispatcher as object
+rem ----------------------------------------------------------------------
+rem get access to the document
+document   = ThisComponent.CurrentController.Frame
+dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
+
+rem ----------------------------------------------------------------------
+dim args1(3) as new com.sun.star.beans.PropertyValue
+args1(0).Name = &quot;FileName&quot;
+args1(0).Value = ImgUrl
+args1(1).Name = &quot;FilterName&quot;
+args1(1).Value = &quot;&lt;Alle formater&gt;&quot;
+args1(2).Name = &quot;AsLink&quot;
+args1(2).Value = false
+args1(3).Name = &quot;Style&quot;
+args1(3).Value = &quot;Grafik&quot;
+
+dispatcher.executeDispatch(document, &quot;.uno:InsertGraphic&quot;, &quot;&quot;, 0, args1())
+&apos;print err
+rem ----------------------------------------------------------------------
+
+
+end sub
+
+
+Sub StatusText(TextToWrite as String)
+  Dim iLen As Integer
+  Dim iRest as Integer
+  
+  iLen = Len(TextToWrite)
+  iRest = 270-iLen
+  ProgressBar.start(TextToWrite+SPACE(iRest),0)
+
+End Sub
+
+
+Sub ErrorHandling(Text$)
+ msgbox (Text$,0,&quot;Error in Chemestry&quot;)
+ end
+End sub
+
+
+
+</script:module>

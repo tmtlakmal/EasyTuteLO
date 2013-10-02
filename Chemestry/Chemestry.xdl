@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="Chemestry" dlg:left="189" dlg:top="69" dlg:width="158" dlg:height="147" dlg:closeable="true" dlg:moveable="true" dlg:title="Chemestry">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:text-color="0xff0000"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="LabelChemestry" dlg:tab-index="1" dlg:left="2" dlg:top="13" dlg:width="25" dlg:height="10" dlg:value="Formula:"/>
+  <dlg:text dlg:id="LabelPNG" dlg:tab-index="5" dlg:left="2" dlg:top="29" dlg:width="25" dlg:height="10" dlg:value="Format :"/>
+  <dlg:text dlg:id="labelWidth" dlg:tab-index="6" dlg:left="2" dlg:top="47" dlg:width="20" dlg:height="10" dlg:value="Width:"/>
+  <dlg:text dlg:id="LabelHeight" dlg:tab-index="7" dlg:left="61" dlg:top="47" dlg:width="20" dlg:height="10" dlg:value="Height:"/>
+  <dlg:numericfield dlg:id="Width" dlg:tab-index="2" dlg:left="32" dlg:top="45" dlg:width="19" dlg:height="14" dlg:decimal-accuracy="0" dlg:value="250" dlg:value-min="25" dlg:value-max="700"/>
+  <dlg:text dlg:id="linewidthLabel" dlg:tab-index="8" dlg:left="2" dlg:top="63" dlg:width="30" dlg:height="10" dlg:value="Line width:"/>
+  <dlg:text dlg:id="symbolfontsizeLabel" dlg:tab-index="9" dlg:left="61" dlg:top="63" dlg:width="48" dlg:height="10" dlg:value="Symbol font size:"/>
+  <dlg:button dlg:id="OK" dlg:tab-index="12" dlg:left="128" dlg:top="126" dlg:width="23" dlg:height="16" dlg:value="OK">
+   <script:event script:event-name="on-keydown" script:macro-name="vnd.sun.star.script:Chemestry.Chemestry.CloseDialog?language=Basic&amp;location=application" script:language="Script"/>
+   <script:event script:event-name="on-mousedown" script:macro-name="vnd.sun.star.script:Chemestry.Chemestry.CloseDialog?language=Basic&amp;location=application" script:language="Script"/>
+  </dlg:button>
+  <dlg:button dlg:id="Cancel" dlg:tab-index="11" dlg:left="101" dlg:top="126" dlg:width="23" dlg:height="16" dlg:value="Cancel">
+   <script:event script:event-name="on-keydown" script:macro-name="vnd.sun.star.script:Chemestry.Chemestry.CancelDialog?language=Basic&amp;location=application" script:language="Script"/>
+   <script:event script:event-name="on-mousedown" script:macro-name="vnd.sun.star.script:Chemestry.Chemestry.CancelDialog?language=Basic&amp;location=application" script:language="Script"/>
+  </dlg:button>
+  <dlg:textfield dlg:id="ChemestryFormula" dlg:tab-index="0" dlg:left="32" dlg:top="11" dlg:width="123" dlg:height="14"/>
+  <dlg:numericfield dlg:id="Height" dlg:tab-index="3" dlg:left="90" dlg:top="45" dlg:width="19" dlg:height="14" dlg:decimal-accuracy="0" dlg:value="250" dlg:value-min="25" dlg:value-max="700"/>
+  <dlg:numericfield dlg:id="LineWidth" dlg:tab-index="4" dlg:left="32" dlg:top="61" dlg:width="9" dlg:height="12" dlg:decimal-accuracy="0" dlg:value="2" dlg:value-min="1" dlg:value-max="7"/>
+  <dlg:numericfield dlg:id="SymbolFontSize" dlg:tab-index="10" dlg:left="111" dlg:top="62" dlg:width="10" dlg:height="12" dlg:decimal-accuracy="0" dlg:value="16" dlg:value-min="8" dlg:value-max="36"/>
+  <dlg:combobox dlg:id="FileFormat" dlg:tab-index="13" dlg:left="32" dlg:top="29" dlg:width="76" dlg:height="10" dlg:value="GIF" dlg:spin="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="GIF"/>
+    <dlg:menuitem dlg:value="PNG"/>
+   </dlg:menupopup>
+  </dlg:combobox>
+  <dlg:text dlg:style-id="0" dlg:id="Warning" dlg:tab-index="14" dlg:left="2" dlg:top="130" dlg:width="95" dlg:height="9" dlg:multiline="true"/>
+  <dlg:text dlg:id="Label1" dlg:tab-index="15" dlg:left="4" dlg:top="79" dlg:width="52" dlg:height="10" dlg:value="Show all symbols?"/>
+  <dlg:titledbox dlg:id="FrameControl1" dlg:tab-index="16" dlg:disabled="true" dlg:left="2" dlg:top="77" dlg:width="151" dlg:height="14"/>
+  <dlg:checkbox dlg:id="H-symbols" dlg:tab-index="17" dlg:left="62" dlg:top="79" dlg:width="37" dlg:height="10" dlg:value="H-symbols" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="C-symbols" dlg:tab-index="18" dlg:left="106" dlg:top="79" dlg:width="37" dlg:height="10" dlg:value="C-symbols" dlg:checked="false"/>
+  <dlg:text dlg:id="Labelshowstereo" dlg:tab-index="19" dlg:left="4" dlg:top="95" dlg:width="52" dlg:height="10" dlg:value="Show stereo?"/>
+  <dlg:checkbox dlg:id="showstereo" dlg:tab-index="20" dlg:left="62" dlg:top="95" dlg:width="32" dlg:height="12" dlg:value="yes" dlg:checked="false"/>
+  <dlg:titledbox dlg:id="FrameControl2" dlg:tab-index="21" dlg:left="2" dlg:top="94" dlg:width="151" dlg:height="15"/>
+ </dlg:bulletinboard>
+</dlg:window>

@@ -1,0 +1,5 @@
+Chemestry-1.0.0.oxt
+Copyright (c) 2010 Leif Lodahl
+
+<tilføj en kort beskrivelse her>
+
