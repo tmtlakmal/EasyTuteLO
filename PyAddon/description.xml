@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<description
+ xmlns="http://openoffice.org/extensions/description/2006"
+ xmlns:dep="http://openoffice.org/extensions/description/2006"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<identifier value="EasyTuteLO"/>
+	<version value="1.0"/>
+	<platform value="all"/>
+	<registration>
+		<simple-license accept-by="admin" default-license-id="en-US" suppress-on-update="true" >
+			<license-text xlink:href="description/License.txt" lang="en-US" license-id="en-US" />
+		</simple-license>
+	</registration>
+	<!-- <dependencies>
+		<OpenOffice.org-minimal-version value="2.1" dep:name="OpenOffice.org 2.1"/>
+	</dependencies> -->
+	<publisher>
+		<name xlink:href="http://tmtlakmal.wordpress.com" lang="en">LibreExtensions</name>
+	</publisher>
+	<display-name>
+		<name lang="en">EasyTuteLO</name>
+		<name lang="da">EasyTuteLO</name>e>
+	</display-name>	
+	<icon>
+    		<default xlink:href="icons/Math.jpg" />
+    		<high-contrast xlink:href="icons/Math.jpg" />
+  	</icon>
+ 	<extension-description>
+        	<src xlink:href="description/desc_da_DK.txt" lang="da" />
+        	<src xlink:href="description/desc_en_US.txt" lang="en" />
+    	</extension-description>
+
+	
+
+</description>
