@@ -1,0 +1,2 @@
+appid=4WKYHL-AWUQL4GWA3
+host=http://api.wolframalpha.com/v2/query?

@@ -28,7 +28,7 @@ class DocumentHandler():
         text.insertTextContent(cursor,oShape,uno.Bool(1)) 
         
     def addFormulaToWriterDocument(self,doc,cursor,formula):
-        text=doc.Text
+        text = doc.Text 
         formulaObject=doc.createInstance("com.sun.star.text.TextEmbeddedObject")
         formulaObject.CLSID = "078B7ABA-54FC-457F-8551-6147e776a997"
         text.insertTextContent( cursor, formulaObject, 0 )

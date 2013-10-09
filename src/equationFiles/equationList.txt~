@@ -1,0 +1,7 @@
+int x^2 dx
+int x^3 dx
+int cosx dx
+int 5x dx
+int 6x dx
+int x*logx dx
+int x dx

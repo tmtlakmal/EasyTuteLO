@@ -22,7 +22,7 @@ class APICommunicator:
     def readConfigFile(self,fileName):                  #read config file
         try:
             print(os.sys.path[0])
-            fileName = os.path.abspath(os.sys.path[0]+"/"+fileName)
+            fileName = os.path.abspath(os.sys.path[0]+fileName)
             print(fileName)
             f = open(fileName, 'r') 
             res =f.readlines()
@@ -90,7 +90,8 @@ class APICommunicator:
                 waeq.Async = False
                 waeq.ToURL()
                 result = self.waeo.PerformQuery(waeq.Query)
-                f = open(query+'.txt','w')
+                txtFilePath = "equationFiles/"+query
+                f = open(txtFilePath+'.txt','w')
                 f.write(result)
                 f.close()
             except Exception:

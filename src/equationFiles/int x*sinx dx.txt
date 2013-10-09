@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='5'
+    datatypes=''
+    timedout='Integral'
+    timedoutpods=''
+    timing='2.502'
+    parsetiming='0.32'
+    parsetimedout='false'
+    recalculate='http://www4c.wolframalpha.com/api/v2/recalc.jsp?id=MSPa38021ff44cad9e6fg73500002cic88337gdfbgdf&amp;s=58'
+    id='MSPa38031ff44cad9e6fg73500005g3bg5dfccb6675e'
+    host='http://www4c.wolframalpha.com'
+    server='58'
+    related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa38041ff44cad9e6fg73500003e3i66921178ie42&amp;s=58'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral x sin(x) dx = sin(x)-x cos(x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38051ff44cad9e6fg73500003558h8731c8e7c23?MSPStoreType=image/gif&amp;s=58'
+       alt=' integral x sin(x) dx = sin(x)-x cos(x)+constant'
+       title=' integral x sin(x) dx = sin(x)-x cos(x)+constant'
+       width='282'
+       height='34' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral x sin(x) dx
+For the integrand x sin(x), integrate by parts,  integral f dg = f g- integral g df, where 
+ f = x,     dg = sin(x)  dx,
+ df =   dx,     g = -cos(x):
+  =   integral cos(x) dx-x cos(x)
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)-x cos(x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38061ff44cad9e6fg735000054i18e5i8cdi6fb8?MSPStoreType=image/gif&amp;s=58'
+       alt='Take the integral:
+ integral x sin(x) dx
+For the integrand x sin(x), integrate by parts,  integral f dg = f g- integral g df, where 
+ f = x,     dg = sin(x)  dx,
+ df =   dx,     g = -cos(x):
+  =   integral cos(x) dx-x cos(x)
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)-x cos(x)+constant'
+       title='Take the integral:
+ integral x sin(x) dx
+For the integrand x sin(x), integrate by parts,  integral f dg = f g- integral g df, where 
+ f = x,     dg = sin(x)  dx,
+ df =   dx,     g = -cos(x):
+  =   integral cos(x) dx-x cos(x)
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)-x cos(x)+constant'
+       width='456'
+       height='355' />
+  </subpod>
+  <states count='1'>
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plots of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='2'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38071ff44cad9e6fg735000068112g6d0h489g6g?MSPStoreType=image/gif&amp;s=58'
+       alt=''
+       title=''
+       width='293'
+       height='124' />
+  </subpod>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38081ff44cad9e6fg73500005b47a7bg4b23h264?MSPStoreType=image/gif&amp;s=58'
+       alt=''
+       title=''
+       width='307'
+       height='123' />
+  </subpod>
+ </pod>
+ <pod title='Alternate form of the integral'
+     scanner='Integral'
+     id='AlternateForm'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>-1/2 e^(-i x) x-1/2 e^(i x) x+1/2 i e^(-i x)-1/2 i e^(i x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38091ff44cad9e6fg7350000696c5ihfhfd33918?MSPStoreType=image/gif&amp;s=58'
+       alt='-1/2 e^(-i x) x-1/2 e^(i x) x+1/2 i e^(-i x)-1/2 i e^(i x)+constant'
+       title='-1/2 e^(-i x) x-1/2 e^(i x) x+1/2 i e^(-i x)-1/2 i e^(i x)+constant'
+       width='337'
+       height='36' />
+  </subpod>
+ </pod>
+ <pod title='Series expansion of the integral at x=0'
+     scanner='Series'
+     id='SeriesExpansionOfTheIntegralAt `1`x=0.'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>x^3/3-x^5/30+x^7/840+O(x^8)</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38101ff44cad9e6fg73500001dgd4i69bgd04e92?MSPStoreType=image/gif&amp;s=58'
+       alt='x^3/3-x^5/30+x^7/840+O(x^8)'
+       title='x^3/3-x^5/30+x^7/840+O(x^8)'
+       width='151'
+       height='40' />
+  </subpod>
+ </pod>
+ <pod title='Definite integral'
+     scanner='Integral'
+     id='DefiniteIntegral'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext> integral_0^pi x sin(x) dx = pi~~3.14159</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP38111ff44cad9e6fg73500005gg7hcba81ahh609?MSPStoreType=image/gif&amp;s=58'
+       alt=' integral_0^pi x sin(x) dx = pi~~3.14159'
+       title=' integral_0^pi x sin(x) dx = pi~~3.14159'
+       width='191'
+       height='35' />
+   <states count='1'>
+    <state name='More digits'
+        input='DefiniteIntegral__1_More digits' />
+   </states>
+  </subpod>
+ </pod>
+</queryresult>

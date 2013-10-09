@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='0.831'
+    parsetiming='0.266'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa25821h126ddf80a3020d00001f1gc77447gg0cdf'
+    host='http://www5a.wolframalpha.com'
+    server='56'
+    related='http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa25831h126ddf80a3020d00001chfb44e2e9c35g1&amp;s=56'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral x dx = x^2/2+constant</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP25841h126ddf80a3020d00004i4i2fi92ah17gah?MSPStoreType=image/gif&amp;s=56'
+       alt=' integral x dx = x^2/2+constant'
+       title=' integral x dx = x^2/2+constant'
+       width='159'
+       height='39' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  x^2/2+constant</plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP25851h126ddf80a3020d000061930i4i00hg3eg6?MSPStoreType=image/gif&amp;s=56'
+       alt='Take the integral:
+ integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  x^2/2+constant'
+       title='Take the integral:
+ integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  x^2/2+constant'
+       width='184'
+       height='214' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='IndefiniteIntegral__Approximate form' />
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plot of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www5a.wolframalpha.com/Calculate/MSP/MSP25861h126ddf80a3020d00001ce051i43bc53e61?MSPStoreType=image/gif&amp;s=56'
+       alt=''
+       title=''
+       width='293'
+       height='135' />
+  </subpod>
+ </pod>
+</queryresult>

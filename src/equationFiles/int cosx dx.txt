@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='6'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='1.454'
+    parsetiming='0.247'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa980522572513c2e7ii5600001f4e435047gh7ah8'
+    host='http://www4c.wolframalpha.com'
+    server='12'
+    related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa980622572513c2e7ii5600003e076id2f99ga1eh&amp;s=12'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral cos(x) dx = sin(x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP980722572513c2e7ii5600002g3a935g7de57i12?MSPStoreType=image/gif&amp;s=12'
+       alt=' integral cos(x) dx = sin(x)+constant'
+       title=' integral cos(x) dx = sin(x)+constant'
+       width='207'
+       height='34' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral cos(x) dx
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP980822572513c2e7ii5600002ca29a0ha3bf5g93?MSPStoreType=image/gif&amp;s=12'
+       alt='Take the integral:
+ integral cos(x) dx
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)+constant'
+       title='Take the integral:
+ integral cos(x) dx
+The integral of cos(x) is sin(x):
+Answer: |  
+ |   =  sin(x)+constant'
+       width='201'
+       height='170' />
+  </subpod>
+  <states count='1'>
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plots of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='2'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP980922572513c2e7ii5600003h73a0gh0456766f?MSPStoreType=image/gif&amp;s=12'
+       alt=''
+       title=''
+       width='293'
+       height='128' />
+  </subpod>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP981022572513c2e7ii560000590c6fc241i2iifb?MSPStoreType=image/gif&amp;s=12'
+       alt=''
+       title=''
+       width='307'
+       height='130' />
+  </subpod>
+ </pod>
+ <pod title='Alternate form of the integral'
+     scanner='Integral'
+     id='AlternateForm'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>1/2 i e^(-i x)-1/2 i e^(i x)+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP981122572513c2e7ii560000150c3659ba69543c?MSPStoreType=image/gif&amp;s=12'
+       alt='1/2 i e^(-i x)-1/2 i e^(i x)+constant'
+       title='1/2 i e^(-i x)-1/2 i e^(i x)+constant'
+       width='189'
+       height='36' />
+  </subpod>
+ </pod>
+ <pod title='Series expansion of the integral at x=0'
+     scanner='Series'
+     id='SeriesExpansionOfTheIntegralAt `1`x=0.'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>x-x^3/6+x^5/120+O(x^6)</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP981222572513c2e7ii5600003b6fhhb91eihbbch?MSPStoreType=image/gif&amp;s=12'
+       alt='x-x^3/6+x^5/120+O(x^6)'
+       title='x-x^3/6+x^5/120+O(x^6)'
+       width='139'
+       height='39' />
+  </subpod>
+ </pod>
+ <pod title='Definite integral'
+     scanner='Integral'
+     id='DefiniteIntegral'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext> integral_0^(pi/2) cos(x) dx = 1</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP981322572513c2e7ii5600000f6d9eeeaef22cd1?MSPStoreType=image/gif&amp;s=12'
+       alt=' integral_0^(pi/2) cos(x) dx = 1'
+       title=' integral_0^(pi/2) cos(x) dx = 1'
+       width='114'
+       height='39' />
+  </subpod>
+ </pod>
+ <pod title='Definite integral mean square'
+     scanner='Integral'
+     id='DefiniteIntegralMeanSquare'
+     position='600'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext> integral_0^(2 pi) (cos^2(x))/(2 pi) dx = 1/2</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP981422572513c2e7ii56000051aai567add3bh56?MSPStoreType=image/gif&amp;s=12'
+       alt=' integral_0^(2 pi) (cos^2(x))/(2 pi) dx = 1/2'
+       title=' integral_0^(2 pi) (cos^2(x))/(2 pi) dx = 1/2'
+       width='135'
+       height='40' />
+   <states count='1'>
+    <state name='More digits'
+        input='DefiniteIntegralMeanSquare__1_More digits' />
+   </states>
+  </subpod>
+ </pod>
+</queryresult>

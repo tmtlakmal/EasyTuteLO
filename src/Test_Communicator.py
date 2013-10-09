@@ -41,7 +41,7 @@ class Test_APICommunicator(unittest.TestCase):
         except Exception:
             self.assertEquals(a.isConfigured(), False)
             
-    def testGetResult(self):
+    def testGetResult(self):                    #test case to get result method
         a=com.APICommunicator() 
         try:
             a.setConfiguration()

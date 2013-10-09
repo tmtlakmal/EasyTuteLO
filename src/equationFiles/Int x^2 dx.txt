@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='1.23'
+    parsetiming='0.335'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa4811hi8553d2d9e26fh000036h4e35g915aa84c'
+    host='http://www4a.wolframalpha.com'
+    server='64'
+    related='http://www4a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa4821hi8553d2d9e26fh0000607h7eg83i9c911d&amp;s=64'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral x^2  dx = x^3/3+constant</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4831hi8553d2d9e26fh00001iccbd8b06g59gi9?MSPStoreType=image/gif&amp;s=64'
+       alt=' integral x^2  dx = x^3/3+constant'
+       title=' integral x^2  dx = x^3/3+constant'
+       width='166'
+       height='39' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral x^2  dx
+The integral of x^2 is x^3/3:
+Answer: |  
+ |   =  x^3/3+constant</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4841hi8553d2d9e26fh000011g6cba550c8i287?MSPStoreType=image/gif&amp;s=64'
+       alt='Take the integral:
+ integral x^2  dx
+The integral of x^2 is x^3/3:
+Answer: |  
+ |   =  x^3/3+constant'
+       title='Take the integral:
+ integral x^2  dx
+The integral of x^2 is x^3/3:
+Answer: |  
+ |   =  x^3/3+constant'
+       width='184'
+       height='214' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='IndefiniteIntegral__Approximate form' />
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plot of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4851hi8553d2d9e26fh00002da5igg1131i958b?MSPStoreType=image/gif&amp;s=64'
+       alt=''
+       title=''
+       width='293'
+       height='123' />
+  </subpod>
+ </pod>
+</queryresult>

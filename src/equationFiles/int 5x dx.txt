@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='0.973'
+    parsetiming='0.267'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa123221ge1b69eh5edi8300001c6fgbb6eace7b46'
+    host='http://www2.wolframalpha.com'
+    server='20'
+    related='http://www2.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa123321ge1b69eh5edi8300001ahec71gg27879d9&amp;s=20'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral 5 x dx = (5 x^2)/2+constant</plaintext>
+   <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP123421ge1b69eh5edi83000059efe30315c6i8ad?MSPStoreType=image/gif&amp;s=20'
+       alt=' integral 5 x dx = (5 x^2)/2+constant'
+       title=' integral 5 x dx = (5 x^2)/2+constant'
+       width='181'
+       height='39' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral 5 x dx
+Factor out constants:
+  =  5 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  (5 x^2)/2+constant</plaintext>
+   <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP123521ge1b69eh5edi830000272ed3bcc33502bg?MSPStoreType=image/gif&amp;s=20'
+       alt='Take the integral:
+ integral 5 x dx
+Factor out constants:
+  =  5 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  (5 x^2)/2+constant'
+       title='Take the integral:
+ integral 5 x dx
+Factor out constants:
+  =  5 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  (5 x^2)/2+constant'
+       width='195'
+       height='309' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='IndefiniteIntegral__Approximate form' />
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plot of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP123621ge1b69eh5edi8300005b6ga4c4623h667h?MSPStoreType=image/gif&amp;s=20'
+       alt=''
+       title=''
+       width='293'
+       height='135' />
+  </subpod>
+ </pod>
+</queryresult>

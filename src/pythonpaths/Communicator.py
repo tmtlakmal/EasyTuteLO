@@ -6,6 +6,7 @@ Created on Aug 31, 2013
 #!/usr/bin/env python
 import wap
 import os
+import urllib
 
 class APICommunicator:        
     
@@ -44,7 +45,9 @@ class APICommunicator:
                     self.host = tokens[1].split("\n")[0] 
                 else:
                     print(s)
-            self.checkConfiguration()                   #set configured true
+            self.configured=True
+            self.waeo = wap.WolframAlphaEngine(self.appid,self.host)
+            #self.checkConfiguration()                   #set configured true
         else:
             print("The file is not configured.")
             
@@ -72,26 +75,84 @@ class APICommunicator:
     def getHost(self):                                  #method to get host
         return self.host
     
-    def getResult(self,query):                          #method to get result
+    def getResult1(self,query):                          #method to get result
         if(self.isConfigured()):
             try:
+                self.stepInput=query
+                txtFilePath = os.sys.path[0]+"/equationFiles/"+query+'.txt'
                 waeq = wap.WolframAlphaQuery(query,self.appid)
                 waeq.Async = False
                 waeq.ToURL()
                 result = self.waeo.PerformQuery(waeq.Query)
+                f = open(txtFilePath,'w')
+                f.write(result)
+                f.close()
                 waeqr = wap.WolframAlphaQueryResult(result)
                 for pod in waeqr.Pods():
                     waep = wap.Pod(pod)
-                    if(waep.PodStates()[0][1][2][1]=='Step-by-step solution'):
-                        self.stepinput = waep.PodStates()[0][1][1][1]
-                        break
+                    for state in waep.PodStates():
+                        if(state[1][2][1]=='Step-by-step solution'):
+                            self.stepinput = state[1][1][1]
+                            break
+                    
                 waeq = wap.WolframAlphaQuery(query,self.appid)
                 waeq.AddPodState(self.stepinput)
                 waeq.Async = False
                 waeq.ToURL()
                 result = self.waeo.PerformQuery(waeq.Query)
-                f = open(query+'.txt','w')
+                print(txtFilePath)
+                f = open(txtFilePath,'w')
                 f.write(result)
                 f.close()
             except Exception:
                 print("connection problem") 
+                
+    def getResult(self,query):                          #method to get result
+        if(self.isConfigured()):
+            self.stepInput=''
+            txtFilePath = os.sys.path[0]+"/equationFiles/"+query.lower()+'.txt'
+            query=urllib.quote(query)
+            waeq = wap.WolframAlphaQuery(query,self.appid)
+            waeq.Async = False
+            waeq.ToURL()
+            result = self.waeo.PerformQuery(waeq.Query)
+            print(result)
+            f = open(txtFilePath,'w')
+            f.write(result)
+            f.close()
+            self.getStepInput(result)
+            waeq = wap.WolframAlphaQuery(query,self.appid)
+            if(self.stepInput!=''):
+                waeq.AddPodState(self.stepInput)
+            waeq.Async = False
+            waeq.ToURL()
+            result = self.waeo.PerformQuery(waeq.Query)
+            print(txtFilePath)
+            f = open(txtFilePath,'w')
+            f.write(result)
+            f.close()  
+            
+    def getStepInput(self,result):
+        waeqr = wap.WolframAlphaQueryResult(result)
+        for pod in waeqr.Pods():
+            waep = wap.Pod(pod)
+            for state in waep.PodStates():
+                for stateData in state:
+                    if(stateData[0]=='state'):
+                        if(stateData[2][1]=='Step-by-step solution'):
+                            self.stepInput = stateData[1][1]
+        
+    
+    def readFile(self,query):                     #read the file and give the result - 
+        try:  
+            fPath=os.sys.path[0][0:len(os.sys.path[0])-12]+"/equationFiles/"+query.lower()+'.txt'
+            print(fPath)                             
+            f = open(fPath, 'r')
+            result = f.read()
+            return result
+        except IOError:                     #if the file is not existing return NoSuchFile
+            return "NoSuchFile"      
+        
+    def configureAndGetResult(self,query):
+        self.setConfiguration()
+        self.getResult(query)           

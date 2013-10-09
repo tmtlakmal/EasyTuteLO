@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='1.102'
+    parsetiming='0.35'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa4482052bg7fcdi60495000054950ib04b5h25g6'
+    host='http://www4a.wolframalpha.com'
+    server='61'
+    related='http://www4a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa4492052bg7fcdi6049500001h05de788083efei&amp;s=61'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral X dX = X^2/2+constant</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4502052bg7fcdi6049500005i13338ff073e00i?MSPStoreType=image/gif&amp;s=61'
+       alt=' integral X dX = X^2/2+constant'
+       title=' integral X dX = X^2/2+constant'
+       width='168'
+       height='39' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral X dX
+The integral of X is X^2/2:
+Answer: |  
+ |   =  X^2/2+constant</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4512052bg7fcdi604950000320i8di16074i8gg?MSPStoreType=image/gif&amp;s=61'
+       alt='Take the integral:
+ integral X dX
+The integral of X is X^2/2:
+Answer: |  
+ |   =  X^2/2+constant'
+       title='Take the integral:
+ integral X dX
+The integral of X is X^2/2:
+Answer: |  
+ |   =  X^2/2+constant'
+       width='187'
+       height='214' />
+  </subpod>
+  <states count='2'>
+   <state name='Approximate form'
+       input='IndefiniteIntegral__Approximate form' />
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plot of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP4522052bg7fcdi6049500003ff600cc7953a4c3?MSPStoreType=image/gif&amp;s=61'
+       alt=''
+       title=''
+       width='294'
+       height='135' />
+  </subpod>
+ </pod>
+ <assumptions count='1'>
+  <assumption type='Clash'
+      word='DX'
+      template='Assuming &quot;${word}&quot; is ${desc1}. Use as ${desc2} instead'
+      count='2'>
+   <value name='Differential'
+       desc=' referring to derivative computations'
+       input='*C.DX-_*Differential-' />
+   <value name='RomanNumeral'
+       desc='a roman numeral'
+       input='*C.DX-_*RomanNumeral-' />
+  </assumption>
+ </assumptions>
+</queryresult>

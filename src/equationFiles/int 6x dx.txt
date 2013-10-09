@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='0.988'
+    parsetiming='0.272'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa201241h5d25f0bdf78ce600002bi61a12hf014eg3'
+    host='http://www4c.wolframalpha.com'
+    server='18'
+    related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa201251h5d25f0bdf78ce6000032d6c5bib1h9e1f0&amp;s=18'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral 6 x dx = 3 x^2+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP201261h5d25f0bdf78ce60000548e8d1d505832ec?MSPStoreType=image/gif&amp;s=18'
+       alt=' integral 6 x dx = 3 x^2+constant'
+       title=' integral 6 x dx = 3 x^2+constant'
+       width='176'
+       height='34' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral 6 x dx
+Factor out constants:
+  =  6 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  3 x^2+constant</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP201271h5d25f0bdf78ce600005eie96efbfabg371?MSPStoreType=image/gif&amp;s=18'
+       alt='Take the integral:
+ integral 6 x dx
+Factor out constants:
+  =  6 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  3 x^2+constant'
+       title='Take the integral:
+ integral 6 x dx
+Factor out constants:
+  =  6 integral x dx
+The integral of x is x^2/2:
+Answer: |  
+ |   =  3 x^2+constant'
+       width='190'
+       height='289' />
+  </subpod>
+  <states count='1'>
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+ </pod>
+ <pod title='Plot of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP201281h5d25f0bdf78ce6000059fg777078c41g9a?MSPStoreType=image/gif&amp;s=18'
+       alt=''
+       title=''
+       width='293'
+       height='135' />
+  </subpod>
+ </pod>
+</queryresult>
