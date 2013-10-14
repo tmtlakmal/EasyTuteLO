@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes=''
+    timedout=''
+    timedoutpods=''
+    timing='1.578'
+    parsetiming='0.282'
+    parsetimedout='false'
+    recalculate=''
+    id='MSPa48711g9h3757i2he9de1000041a1g54g2c3fa8g7'
+    host='http://www4b.wolframalpha.com'
+    server='57'
+    related='http://www4b.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa48721g9h3757i2he9de10000409dc7b4adb575da&amp;s=57'
+    version='2.6'>
+ <pod title='Indefinite integrals'
+     scanner='Integral'
+     id='IndefiniteIntegral'
+     position='100'
+     error='false'
+     numsubpods='2'
+     primary='true'>
+  <subpod title=''>
+   <plaintext> integral 1/x dx = log(x)+constant</plaintext>
+   <img src='http://www4b.wolframalpha.com/Calculate/MSP/MSP48731g9h3757i2he9de1000041g8eebf962baeg3?MSPStoreType=image/gif&amp;s=57'
+       alt=' integral 1/x dx = log(x)+constant'
+       title=' integral 1/x dx = log(x)+constant'
+       width='182'
+       height='36' />
+  </subpod>
+  <subpod title='Possible intermediate steps'>
+   <plaintext>Take the integral:
+ integral 1/x dx
+The integral of 1/x is log(x):
+Answer: |  
+ |   =  log(x)+constant</plaintext>
+   <img src='http://www4b.wolframalpha.com/Calculate/MSP/MSP48741g9h3757i2he9de100000cci2ch4a39d7gid?MSPStoreType=image/gif&amp;s=57'
+       alt='Take the integral:
+ integral 1/x dx
+The integral of 1/x is log(x):
+Answer: |  
+ |   =  log(x)+constant'
+       title='Take the integral:
+ integral 1/x dx
+The integral of 1/x is log(x):
+Answer: |  
+ |   =  log(x)+constant'
+       width='202'
+       height='194' />
+  </subpod>
+  <states count='1'>
+   <state name='Hide steps'
+       input='IndefiniteIntegral__Hide steps' />
+  </states>
+  <infos count='1'>
+   <info text='log(x) is the natural logarithm'>
+    <img src='http://www4b.wolframalpha.com/Calculate/MSP/MSP48751g9h3757i2he9de100002c1e1hea64gi3iag?MSPStoreType=image/gif&amp;s=57'
+        alt='log(x) is the natural logarithm'
+        title='log(x) is the natural logarithm'
+        width='192'
+        height='16' />
+    <link url='http://reference.wolfram.com/mathematica/ref/Log.html'
+        text='Documentation'
+        title='Mathematica' />
+    <link url='http://functions.wolfram.com/ElementaryFunctions/Log'
+        text='Properties'
+        title='Wolfram Functions Site' />
+    <link url='http://mathworld.wolfram.com/NaturalLogarithm.html'
+        text='Definition'
+        title='MathWorld' />
+   </info>
+  </infos>
+ </pod>
+ <pod title='Plots of the integral'
+     scanner='Integral'
+     id='Plot'
+     position='200'
+     error='false'
+     numsubpods='2'>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4b.wolframalpha.com/Calculate/MSP/MSP48761g9h3757i2he9de1000051d63ffgcb3cca61?MSPStoreType=image/gif&amp;s=57'
+       alt=''
+       title=''
+       width='314'
+       height='115' />
+   <states count='1'>
+    <statelist count='2'
+        value='Complex-valued plot'
+        delimiters=''>
+     <state name='Complex-valued plot'
+         input='Plot__1_Complex-valued plot' />
+     <state name='Real-valued plot'
+         input='Plot__1_Real-valued plot' />
+    </statelist>
+   </states>
+  </subpod>
+  <subpod title=''>
+   <plaintext></plaintext>
+   <img src='http://www4b.wolframalpha.com/Calculate/MSP/MSP48771g9h3757i2he9de100003c8ecgbg1ii61gf1?MSPStoreType=image/gif&amp;s=57'
+       alt=''
+       title=''
+       width='314'
+       height='120' />
+   <states count='1'>
+    <statelist count='2'
+        value='Complex-valued plot'
+        delimiters=''>
+     <state name='Complex-valued plot'
+         input='Plot__2_Complex-valued plot' />
+     <state name='Real-valued plot'
+         input='Plot__2_Real-valued plot' />
+    </statelist>
+   </states>
+  </subpod>
+ </pod>
+</queryresult>

@@ -5,21 +5,23 @@ Created on Sep 1, 2013
 '''
 
 import unittest,os
-import Communicator as com
+from pythonpaths import Communicator as com
 
 class Test_APICommunicator(unittest.TestCase):
     
+    
+    
     def testAPICommunicator(self):              #test case for API configuration
         a=com.APICommunicator('configuration1.txt')
-        self.assertEquals(a.isFileConfigured(),True)
+        self.assertEquals(a.isFileConfigured(),False)
         a=com.APICommunicator('configuration2.txt')
         self.assertEquals(a.isFileConfigured(),False)
         a=com.APICommunicator()
         self.assertEquals(a.isFileConfigured(),True)
-        os.rename("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configuration.txt","/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configurationBack.txt")
+        #os.rename("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configuration.txt","/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configurationBack.txt")
         a=com.APICommunicator()
-        self.assertEquals(a.isFileConfigured(),False)
-        os.rename("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configurationBack.txt","/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configuration.txt")
+        self.assertEquals(a.isFileConfigured(),True)
+        #os.rename("/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configurationBack.txt","/home/lakmal/workspace/EasyTuteLO/WolframCom/src/configuration.txt")
 
     def testConfigurationSet(self):             #test case to check configuration
         a=com.APICommunicator()  

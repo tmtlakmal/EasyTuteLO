@@ -5,3 +5,5 @@ int 5x dx
 int 6x dx
 int x*logx dx
 int x dx
+int lnx dx
+int 1/x dx

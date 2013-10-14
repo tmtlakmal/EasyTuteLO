@@ -6,10 +6,6 @@ Created on Aug 31, 2013
 #!/usr/bin/env python
 import wap
 import os
-import urllib
-import FileHandler as fh
-
-universalFilePath="/home/lakmal/Documents/EasyTuteLO"
 
 class APICommunicator:        
     
@@ -26,7 +22,7 @@ class APICommunicator:
     def readConfigFile(self,fileName):                  #read config file
         try:
             print(os.sys.path[0])
-            fileName = universalFilePath+"/"+fileName
+            fileName = os.path.abspath(os.sys.path[0]+"/"+fileName)
             print(fileName)
             f = open(fileName, 'r') 
             res =f.readlines()
@@ -48,9 +44,7 @@ class APICommunicator:
                     self.host = tokens[1].split("\n")[0] 
                 else:
                     print(s)
-            self.configured=True
-            self.waeo = wap.WolframAlphaEngine(self.appid,self.host)
-            #self.checkConfiguration()                   #set configured true
+            self.checkConfiguration()                   #set configured true
         else:
             print("The file is not configured.")
             
@@ -78,55 +72,26 @@ class APICommunicator:
     def getHost(self):                                  #method to get host
         return self.host
     
-    
-                
     def getResult(self,query):                          #method to get result
         if(self.isConfigured()):
-            self.stepInput=''
-            txtFilePath = fh.FileHandler().createFilePathForTheQuery(query)
-            query=urllib.quote(query)                   #quote the url
-            waeq = wap.WolframAlphaQuery(query,self.appid)
-            waeq.Async = False
-            waeq.ToURL()                                #get result from wolfram alpha
-            result = self.waeo.PerformQuery(waeq.Query)
-            print(result)
-            f = open(txtFilePath,'w')                   #write the result to a file
-            f.write(result)
-            f.close()
-            self.getStepInput(result)                   #get the step input by reading the file
-            waeq = wap.WolframAlphaQuery(query,self.appid)
-            if(self.stepInput!=''):                     #get the result with step by solution 
-                waeq.AddPodState(self.stepInput)
-            waeq.Async = False
-            waeq.ToURL()                                #query the step wise solution result
-            result = self.waeo.PerformQuery(waeq.Query)
-            print(txtFilePath)                          #write the result into file
-            f = open(txtFilePath,'w')
-            f.write(result)
-            f.close()  
-            
-    def getStepInput(self,result):                      #get the step input line from the result file
-        waeqr = wap.WolframAlphaQueryResult(result)
-        for pod in waeqr.Pods():
-            waep = wap.Pod(pod)
-            for state in waep.PodStates():
-                for stateData in state:
-                    if(stateData[0]=='state'):
-                        if(stateData[2][1]=='Step-by-step solution'):
-                            self.stepInput = stateData[1][1]
-        
-    
-    def readFile(self,query):                     #read the file and give the result - 
-        try:  
-            fPath=os.sys.path[0][0:len(os.sys.path[0])-12]+"/equationFiles/"+query.lower()+'.txt'
-            print(fPath)                             
-            f = open(fPath, 'r')
-            result = f.read()
-            return result
-        except IOError:                             #if the file is not existing return NoSuchFile
-            return "NoSuchFile"      
-        
-    def configureAndGetResult(self,query):          #set the configuartion and get result
-        self.setConfiguration()
-        self.getResult(query)   
-
+            try:
+                waeq = wap.WolframAlphaQuery(query,self.appid)
+                waeq.Async = False
+                waeq.ToURL()
+                result = self.waeo.PerformQuery(waeq.Query)
+                waeqr = wap.WolframAlphaQueryResult(result)
+                for pod in waeqr.Pods():
+                    waep = wap.Pod(pod)
+                    if(waep.PodStates()[0][1][2][1]=='Step-by-step solution'):
+                        self.stepinput = waep.PodStates()[0][1][1][1]
+                        break
+                waeq = wap.WolframAlphaQuery(query,self.appid)
+                waeq.AddPodState(self.stepinput)
+                waeq.Async = False
+                waeq.ToURL()
+                result = self.waeo.PerformQuery(waeq.Query)
+                f = open(query+'.txt','w')
+                f.write(result)
+                f.close()
+            except Exception:
+                print("connection problem") 

@@ -3,7 +3,7 @@ Created on Aug 31, 2013
 
 @author: lakmal
 '''
-import WolframParser as wp
+from pythonpaths import WolframParser as wp
 import unittest
 import os
 

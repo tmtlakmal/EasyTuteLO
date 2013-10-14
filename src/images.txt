@@ -1,4 +1,0 @@
-int x dx
-False
-True
-True
